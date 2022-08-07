@@ -19,8 +19,8 @@ from config import (
 async def cbstart(_, query: CallbackQuery):
     await query.answer("الصفحه الرئيسيه")
     await query.edit_message_text(
-        f"""✨ **مرحبا عزيزي »「 [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) 」!**\n
-💭 **᥀︙انا بوت استطيع تشغيل الاغاني والموسيقى في المكالمات  الصوتية! 
+        f""" **مرحبا عزيزي »「 [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) 」!**\n
+ **᥀︙انا بوت استطيع تشغيل الاغاني والموسيقى في المكالمات  الصوتية! 
 
 ᥀︙ لمعرفة اوامر هذا البوت اضغط على » ‹الاوامر الاساسية›!
 
@@ -33,19 +33,19 @@ async def cbstart(_, query: CallbackQuery):
                     ],
                 [
                     InlineKeyboardButton("‹ اوامر التشغيل › ", callback_data="cbcmds"),
-                    InlineKeyboardButton("❤️ المطور", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton(" المطور", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
                         "‹ كروب الدعم ›", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "‹ لتنصيب بوتك›", url=f"https://t.me/EITHON1/819"
+                        "‹ لتنصيب بوتك›", url=f"https://t.me/BU_NH/819"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "ضيـف البـوت لمجمـوعتـك ✅",
+                        "ضيـف البـوت لمجمـوعتـك",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
                     )
                 ],
